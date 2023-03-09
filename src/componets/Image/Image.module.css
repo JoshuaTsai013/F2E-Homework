@@ -1,0 +1,28 @@
+/* Image Style */
+.image {
+    position: relative;
+  }
+  
+  .imagelayout {
+    background-color: #fff;
+    font-size: 1rem;
+  }
+  
+  .imagelink {
+    display: block;
+  }
+  
+  .imageStyle {
+    width: 100%;
+    display: block;
+  }
+  
+  .imageTitle {
+    color: white;
+    right: 2rem;
+    bottom: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+  }
+  
