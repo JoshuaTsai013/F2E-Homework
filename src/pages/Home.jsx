@@ -4,14 +4,12 @@ import Description from "../componets/Description/index"
 import Footer from "../componets/Footer/index"
 function Home() {
     return (
-        <div>
-            <Header />
-        <div className="container">            
-            <Image />
-            <Description />            
-        </div>
+        <div ClassName="homeLayout">
+        <Header />
+        <Image />              
+        <Description />
         <Footer />
-        </div>        
-    );
+        </div>
+        );
 }
-export default Home;
+export default Home
