@@ -23,11 +23,17 @@ p {
   font-size: 1.2rem;
 }
 
+.text-center {
+  margin: 2% auto;
+  text-align: center;
+}
+
 /* Home Style */
 .homeLayout {
   display: grid;
   grid-template-rows: auto 1fr auto auto;
 }
+
 /* Divider Style */
 .divider--light,
 .divider--dark {
@@ -50,6 +56,8 @@ p {
   width: 100%;
   align-self: center;
   margin: auto;
+  padding-left: 10px;
+  padding-right:10px;
 }
 
 @media (min-width: 576px){

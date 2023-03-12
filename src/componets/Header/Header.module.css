@@ -1,17 +1,17 @@
 /* Header Style */
 .header {
     background-color: #00979c;
-    height: 60vh;
+    height: auto;
     color: #fff;
     font-size: 0.8rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
   @media screen and (min-width: 768px) {
     .header {
-      height: 50vh;
       font-size: 1rem;
     }
   }

@@ -5,7 +5,7 @@ export default function Header() {
                 <img className={styles.headerAvatar} src="./images/avatar.png" alt="avatar" />
                 <h1 className={styles.headerTitle}>OAO</h1>
                 <hr className="divider--light" />
-                <p className={styles.headerSlogan}>2000</p>
+                {/* <p className={styles.headerSlogan}>2000</p> */}
         </header>
     );
 }

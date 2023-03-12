@@ -3,9 +3,10 @@
     position: relative;
   }
   
-  .imagelayout {
+  .imageLayout {
     background-color: #fff;
     font-size: 1rem;
+    padding-bottom: 50px;
   }
   
   .imagelink {
