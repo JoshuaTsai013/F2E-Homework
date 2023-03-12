@@ -67,6 +67,10 @@
     .footerlist {
       justify-content: flex-end;
     }
+    .footerItem {
+      margin-right: 0;
+      margin-left: 20px;
+    }
   }
   
   .footerBelow {
