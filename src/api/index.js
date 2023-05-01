@@ -1,15 +1,14 @@
 import { getApps, getApp, initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, orderBy, query } from "firebase/firestore";
-import images from "../json/images.json";
+// import images from "../json/images.json";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB7iAprueEeNtH5de0YYcpQnBer0ouvEjM",
-    authDomain: "react-course-wk1.firebaseapp.com",
-    projectId: "react-course-wk1",
-    storageBucket: "react-course-wk1.appspot.com",
-    messagingSenderId: "785075164927",
-    appId: "1:785075164927:web:3fbcb1d935ac64cf70deca",
-    measurementId: "G-GQ4GLG28NW"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECTID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APPID
 }
 const app_length = getApps().length > 0;
 const app = app_length ? getApp() : initializeApp(firebaseConfig);
@@ -25,7 +24,7 @@ export const getImages = async () => {
     //convert thr query to a json array.
     let result = [];
     querySnapshot.forEach(async (image) => {
-        await result.push(image.data());
+        result.push(image.data());
     });
     return result;
 }
